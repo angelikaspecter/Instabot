@@ -1,0 +1,24 @@
+.btn-group {
+    &__lang {
+        @media (max-width: 767px) {
+            @include h2;
+            margin-top: auto;
+            &--link {
+                text-decoration: none;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            @include h2;
+            margin-top: auto;
+            &--link {
+                text-decoration: none;
+            }
+        }
+        @media (min-width: 1200px) {
+            @include body;
+            &--link {
+                text-decoration: none;
+            }
+        }
+    }
+}

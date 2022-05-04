@@ -1,0 +1,11 @@
+.logo {
+    @include text;
+    @include body;
+    text-decoration: none;
+    &--main {
+        color: var(--color-accident-one);
+    }
+    &--secondary {
+        color: var(--main-white);
+    }
+}

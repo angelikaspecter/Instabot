@@ -1,0 +1,18 @@
+.text {
+    @include text;
+    &--white {
+        color: var(--main-white);
+    }
+    &--black {
+        color: var(--main-black);
+    }
+    &--grey {
+        color: var(--main-grey);
+    }
+    &--lt-grey {
+        color: var(--main-lt-grey);
+    }
+    &--accident {
+        color: var(--color-accident-one-hover);
+    }
+}

@@ -1,0 +1,102 @@
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: none;
+    padding: 12px 24px;
+    white-space: nowrap;
+    @include text;
+    @media (max-width: 1199px) {
+        padding: 10.5px 24px;
+    }
+    &:hover {
+        box-shadow: 0px 24px 24px rgba(80, 93, 236, 0.25);
+    }
+    &:active {
+        box-shadow: 0px 8px 24px rgba(60, 73, 221, 0.1);
+    }
+    &--link {
+        padding: 0;
+        flex-direction: row;
+        align-items: baseline;
+        text-decoration: none;
+        color: var(--main-white);
+        @include body;
+        & i {
+            margin-left: 8px;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &--link-mobile {
+        padding: 0;
+        flex-direction: row;
+        align-items: baseline;
+        text-decoration: none;
+        color: var(--main-white);
+        @include body;
+        & i {
+            margin-left: 8px;
+        }
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    &--main {
+        background: var(--main-white);
+        color: var(--color-accident-one);
+        &:hover {
+            background: var(--main-white);
+        }
+        &:active {
+            background: var(--main-white);
+        }
+    }
+    &--secondary {
+        background: var(--color-accident-one);
+        color: var(--main-white);
+        &:hover {
+            background: var(--color-accident-one-hover);
+        }
+        &:active {
+            background: var(--color-accident-one-active);
+        }
+    }
+    &--login {
+        background: var(--color-accident-one);
+        color: var(--main-white);
+        z-index: 10;
+        &:hover {
+            background: var(--color-accident-one-hover);
+        }
+        &:active {
+            background: var(--color-accident-one-active);
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+    &--login-mobile {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 24px;
+        background: var(--color-accident-one);
+        color: var(--main-white);
+        padding: 0;
+        z-index: 10;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    &--inner {
+        position: absolute;
+        top: 7px;
+        right: 8px;
+    }
+}

@@ -1,0 +1,72 @@
+@mixin text {
+    font-family: "Visuelt Pro";
+    font-style: normal;
+    line-height: 135%;
+}
+
+@mixin h1 {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 125%;
+    @media (max-width: 767px) {
+        font-size: 32px;
+    }
+}
+
+@mixin h2 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 112%;
+    @media (max-width: 767px) {
+        font-size: 26px;
+    }
+}
+
+@mixin h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    @media (max-width: 767px) {
+        font-size: 18px;
+    }
+}
+
+@mixin headline {
+    font-weight: 500;
+    font-size: 18px;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+@mixin body {
+    font-weight: 400;
+    font-size: 18px;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+@mixin span {
+    font-weight: 500;
+    font-size: 18px;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+@mixin table-text {
+    font-weight: 400;
+    font-size: 16px;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+@mixin desc {
+    font-weight: 400;
+    font-size: 12px;
+    @media (max-width: 767px) {
+        font-size: 10px;
+    }
+}

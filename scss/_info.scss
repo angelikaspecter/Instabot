@@ -1,0 +1,8 @@
+.info {
+    &__logo {
+        margin-bottom: 3px;
+    }
+    &__copyright {
+        @include table-text;
+    }
+}

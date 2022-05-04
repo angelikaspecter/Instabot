@@ -1,0 +1,22 @@
+@import "_modal";
+
+.header {
+    padding: 28px 56px;
+    background: var(--main-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px 24px 0 0;
+    @media (max-width: 767px) {
+        padding: 12px 20px;
+    }
+    &__nav {
+        width: 100%;
+    }
+    &__logo {
+        @media (max-width: 1199px) {
+            margin-left: 16px;
+            margin-right: auto;
+        }
+    }
+}

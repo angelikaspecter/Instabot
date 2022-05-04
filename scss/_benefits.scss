@@ -1,0 +1,25 @@
+.benefits {
+    &__header {
+        display: flex;
+        align-items: center;
+        padding: 12px 16px;
+        background: var(--main-white);
+        box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+        backdrop-filter: blur(24px);
+        & img {
+            width: 56px;
+            height: 56px;
+        }
+        & h3 {
+            @include h3;
+            margin-left: 12px;
+        }
+    }
+    &__body {
+        padding: 24px 24px 24px;
+        color: var(--main-grey);
+        margin: 0;
+        background: #fafafa;
+        box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+    }
+}

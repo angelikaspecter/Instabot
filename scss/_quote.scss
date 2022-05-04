@@ -1,0 +1,43 @@
+.quote {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    margin: 0;
+    &__header {
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+        border-radius: 16px 16px 0px 0px;
+        padding: 16px;
+        & img {
+            z-index: 10;
+        }
+        & cite {
+            @include h3;
+            font-style: normal;
+            margin-left: 16px;
+        }
+        & time {
+            margin: 0;
+            margin-left: auto;
+        }
+    }
+    &__body {
+        padding: 16px 24px;
+        color: var(--main-grey);
+        margin: 0;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+        border-radius: 0px 0px 16px 16px;
+        &--none {
+            display: none;
+        }
+        &--block {
+            display: block;
+        }
+        & p {
+            margin-bottom: 16px;
+        }
+    }
+}

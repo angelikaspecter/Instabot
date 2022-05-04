@@ -1,0 +1,99 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -150px;
+        right: 0;
+        bottom: -150px;
+        background: url("../img/faq-bg.svg") no-repeat 50% 50%;
+        background-size: cover;
+        filter: blur(240px);
+        z-index: -1;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.25);
+        z-index: 0;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    &__item {
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
+        backdrop-filter: blur(240px);
+        border-radius: 16px;
+        overflow: hidden;
+        @media (max-width: 767px) {
+            margin-bottom: 16px;
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: 24px;
+        }
+        @media (min-width: 1200px) {
+            margin-bottom: 16px;
+        }
+    }
+    &__title {
+        @include h3;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 28px 32px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 16px 16px 0px 0px;
+        & h3 {
+            @include h3;
+            margin-left: 12px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 16px;
+        }
+    }
+    &__btn {
+        background: rgba(255, 255, 255, 0.5) url(../img/faq-open.svg) no-repeat 50% 50%;
+        width: 48px;
+        height: 48px;
+        box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
+        border-radius: 24px;
+        border: none;
+        display: block;
+        &_close {
+            background: rgba(255, 255, 255, 0.5) url(../img/faq-close.svg) no-repeat 50% 50%;
+            width: 48px;
+            height: 48px;
+            box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
+            border-radius: 24px;
+            border: none;
+        }
+    }
+    &__body {
+        padding: 24px 24px;
+        color: var(--main-grey);
+        margin: 0;
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: 0px 4px 20px rgba(25, 25, 25, 0.05);
+        border-radius: 0px 0px 16px 16px;
+        display: none;
+        &_display {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инстаботы</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__nav navbar">
+                <button class="navbar__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false">
+                    <img src="img/menu.svg" width="24" height="24" alt="menu icon">
+                </button>
+                <a class="header__logo logo logo--main" href="#">Инстаботы</a>
+                <div class="navbar__collapse collapse" id="navbarHeader">
+                    <p class="collapse__mobile-title">Меню</p>
+                    <ul class="collapse__nav nav">
+                        <li class="nav__item">
+                            <a class="nav__link nav__link--active text text--grey" href="#about">О компании</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link text text--grey" href="#plans">Тарифы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link text text--grey" href="#reviews">Отзывы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link text text--grey" href="#faq">Q&A</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link text text--grey" href="#contact">Обратная связь</a>
+                        </li>
+                    </ul>
+                    <div class="collapse__btn-group btn-group btn-group__lang text text--grey">
+                        <a class="btn-group__lang--link text text--accident" href="#">Ru</a> / <a
+                            class="btn-group__lang--link text text--grey" href="#">En</a>
+                    </div>
+                </div>
+                <button class="navbar__login-btn btn btn--login" id="loginModal" type="button">Вход и
+                    регистрация</button>
+                <!-- Modal -->
+                <div class="modal fade" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                    <div class="modal__dialog modal__dialog--center">
+                        <div class="modal__content">
+                            <div class="modal__header">
+                                <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                                    <img src="img/close.svg" width="24" height="24" alt="">
+                                </button>
+                            </div>
+                            <div class="modal__body">
+                                <form action="#" class="modal__form">
+                                    <label for="staticEmail" class="modal__label">Email</label>
+                                    <input type="text" class="modal__input modal__input--dark" id="staticEmail"
+                                        value="email@example.com" required>
+                                    <label for="inputPassword" class="modal__label">Password</label>
+                                    <input type="password" class="modal__input modal__input--dark" id="inputPassword"
+                                        value="123456789" required>
+                                    <button type="submit" class="modal__btn btn btn--secondary mb-3">Войти</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal End -->
+                <button class="navbar__login-btn btn btn--login-mobile" type="button">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+            </nav>
+        </header>
+        <main>
+            <section class="container promo" id="promo">
+                <ul class="container__list list">
+                    <li class="list__item">
+                        <h1 class="promo__title text">Высокий уровень <br> вовлечения <br> представителей</h1>
+                        <form action="#" method="post" class="promo__subscribe form form__input">
+                            <input type="text" class="form__control form__control--light"
+                                placeholder="Введите свой e-mail">
+                            <button class="form__btn btn btn--main btn--inner" type="button">Отправить</button>
+                        </form>
+                        <p class="promo__desc text text--grey">Нажимая на кнопку вы соглашаетесь на обработку <br> <a
+                                href="#" target="_blank" class="text text--accident">персональных
+                                данных</a></p>
+                        <a class="promo__scroll-dwn text text--white btn--link" href="#about">
+                            <img src="img/wheeldown.svg" width="24" height="32" alt="scroll down"> Листайте
+                            дальше
+                        </a>
+                    </li>
+                    <li class="list__item list__item--img">
+                        <img src="img/promo.svg" width="628" height="720" alt="promo-img">
+                    </li>
+                </ul>
+            </section>
+            <section class="container benefits" id="about">
+                <h2 class="container__title text">Наши преимущества</h2>
+                <ul class="container__list list">
+                    <li class="list__item">
+                        <div class="benefits__header">
+                            <img src="img/emoji_one.svg" width="56" height="56" alt="emoji img">
+                            <h3 class="text text--black">Легко и просто</h3>
+                        </div>
+                        <div class="benefits__body">
+                            <p class="text text--body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet
+                                porttitor.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="benefits__header">
+                            <img src="img/emoji_two.svg" alt="">
+                            <h3 class="text text--black">Быстро и доступно</h3>
+                        </div>
+                        <div class="benefits__body">
+                            <p class="text text--body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet
+                                porttitor.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="benefits__header">
+                            <img src="img/emoji_three.svg" alt="">
+                            <h3 class="text text--black">А главное, качественно</h3>
+                        </div>
+                        <div class="benefits__body">
+                            <p class="text text--body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet
+                                porttitor.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="container about">
+                <h2 class="container__title text text--black">Как мы работаем</h2>
+                <ul class="container__list list">
+                    <li class="list__item list__item--img">
+                        <img src="img/about.svg" width="628" height="640" alt="about-img">
+                    </li>
+                    <li class="list__item">
+                        <ul class="nav-pills">
+                            <li class="nav-pills__item">
+                                <a class="nav-pills__link text active" aria-current="page" href="#">Lorem ipsum</a>
+                            </li>
+                            <li class="nav-pills__item">
+                                <a class="nav-pills__link text" href="#">Lorem ipsum</a>
+                            </li>
+                            <li class="nav-pills__item">
+                                <a class="nav-pills__link nav-pills__link--clean text" href="#">Lorem ipsum</a>
+                            </li>
+                        </ul>
+                        <h3 class="about__subtitle text">Lorem ipsum dolor sit amet, consectetur.</h3>
+                        <p class="about__desc text text--accident">Semper sollicitudin ut cursus nunc eu ultricies.</p>
+                        <p class="about__text text text--grey">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere lorem nulla tincidunt
+                            egestas nibh. Non orci, et massa sed vulputate proin. Eu euismod diam, arcu sit vitae nam.
+                            Tristique orci, ornare sit vel amet.
+                        </p>
+                        <p class="about__text text text--grey">
+                            Ut elit dui iaculis malesuada in auctor dui. Sollicitudin varius vitae ut vitae lacus, sem
+                            dolor fermentum enim. Orci orci interdum pretium adipiscing augue sit nisl adipiscing.
+                        </p>
+                        <a href="#contacts" class="about__btn btn btn--secondary">Забронировать звонок</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="container plans" id="plans">
+                <h2 class="container__title text">Наши тарифы</h2>
+                <ul class="plans__list list">
+                    <li class="plans__item card">
+                        <div class="card__header">
+                            <h3 class="text text--black">Эконом</h3>
+                            <p class="text text--accident"><b>2 990 руб</b><span class="text--grey">/месяц</span></p>
+                        </div>
+                        <div class="card__body">
+                            <ul class="card__list">
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio.
+                                </li>
+                                <li class="card__item card__item--uncheck">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li class="card__item card__item--uncheck">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li class="card__item card__item--uncheck">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio.
+                                </li>
+                            </ul>
+                            <a href="#" class="card__btn btn btn--main">Узнать подробнее</a>
+                        </div>
+                    </li>
+                    <li class="plans__item card">
+                        <div class="card__header">
+                            <h3 class="text text--black">Стандарт</h3>
+                            <p class="text text--accident"><b>4 990 руб</b><span class="text--grey">/месяц</span></p>
+                        </div>
+                        <div class="card__body">
+                            <ul class="card__list">
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio.
+                                </li>
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li class="card__item card__item--uncheck">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li class="card__item card__item--uncheck">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio.
+                                </li>
+                            </ul>
+                            <a href="#" class="card__btn btn btn--main">Узнать подробнее</a>
+                        </div>
+                    </li>
+                    <li class="plans__item card">
+                        <div class="card__header">
+                            <h3 class="text text--black">Экстра</h3>
+                            <p class="text text--accident"><b>8 990 руб</b><span class="text--grey">/месяц</span></p>
+                        </div>
+                        <div class="card__body">
+                            <ul class="card__list">
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio.
+                                </li>
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li class="card__item card__item--uncheck">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio.
+                                </li>
+                            </ul>
+                            <a href="#" class="card__btn btn btn--main">Узнать подробнее</a>
+                        </div>
+                    </li>
+                    <li class="plans__item card">
+                        <div class="card__header">
+                            <h3 class="text text--black">Премиальный</h3>
+                            <p class="text text--accident"><b>12 990 руб</b><span class="text--grey">/месяц</span></p>
+                        </div>
+                        <div class="card__body">
+                            <ul class="card__list">
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio.
+                                </li>
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </li>
+                                <li class="card__item card__item--check">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio.
+                                </li>
+                            </ul>
+                            <a href="#" class="card__btn btn btn--main">Узнать подробнее</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="container reviews" id="reviews">
+                <h2 class="container__title text">Отзывы</h2>
+                <ul class="reviews__list">
+                    <li class="reviews__item reviews__item--one">
+                        <figure class="reviews__quote quote">
+                            <figcaption class="quote__header">
+                                <img src="img/avatar_one.webp" width="64" height="64" alt="Кот Олежка">
+                                <cite title="Кот Олежка">Кот Олежка</cite>
+                                <time datetime="2021-06-03" class="text text--grey">03.06.2021</time>
+                            </figcaption>
+                            <blockquote class="quote__body quote__body--block">
+                                <p class="text text--grey">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet
+                                    porttitor.
+                                    Congue arcu turpis est, aliquet porttitor.
+                                </p>
+                                <div class="stars">
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                </div>
+                            </blockquote>
+                        </figure>
+                    </li>
+                    <li class="reviews__item reviews__item--two">
+                        <figure class="reviews__quote quote">
+                            <figcaption class="quote__header">
+                                <img src="img/avatar_two.webp" width="64" height="64" alt="Кот Семен">
+                                <cite title="Кот Семен">Кот Семен</cite>
+                                <time datetime="2021-06-03" class="text text--grey">03.06.2021</time>
+                            </figcaption>
+                            <blockquote class="quote__body quote__body--block">
+                                <p class="text text--grey">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet
+                                    porttitor.
+                                    Congue arcu turpis est, aliquet porttitor.
+                                </p>
+                                <div class="stars">
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                </div>
+                            </blockquote>
+                        </figure>
+                    </li>
+                    <li class="reviews__item reviews__item--three">
+                        <figure class="reviews__quote  quote">
+                            <figcaption class="quote__header">
+                                <img src="img/avatar_three.webp" width="64" height="64" alt="Кот Серега">
+                                <cite title="Кот Серега">Кот Серега</cite>
+                                <time datetime="2021-06-03" class="text text--grey">03.06.2021</time>
+                            </figcaption>
+                            <blockquote class="quote__body quote__body--block">
+                                <p class="text text--grey">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet
+                                    porttitor.
+                                    Congue arcu turpis est, aliquet porttitor.
+                                </p>
+                                <div class="stars">
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--unactive"></span>
+                                    <span class="stars--unactive"></span>
+                                </div>
+                            </blockquote>
+                        </figure>
+                    </li>
+                    <li class="reviews__item reviews__item--four">
+                        <figure class="reviews__quote quote">
+                            <figcaption class="quote__header">
+                                <img src="img/avatar_four.webp" width="64" height="64" alt="Кот Инокентий">
+                                <cite title="Кот Инокентий">Кот Инокентий</cite>
+                                <time datetime="2021-06-03" class="text text--grey">03.06.2021</time>
+                            </figcaption>
+                            <blockquote class="quote__body quote__body--block">
+                                <p class="text text--grey">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada gravida nisi sit
+                                    felis odio. Sociis et pellentesque sed id. Congue arcu turpis est, aliquet
+                                    porttitor.
+                                    Congue arcu turpis est, aliquet porttitor.
+                                </p>
+                                <div class="stars">
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--active"></span>
+                                    <span class="stars--unactive"></span>
+                                </div>
+                            </blockquote>
+                        </figure>
+                    </li>
+                </ul>
+                <p class="reviews__structure reviews__structure--none text text--grey" id="reviews-structure">Котики
+                    структурированы!</p>
+                <button type="button" class="reviews__btn btn btn--main" id="btn_structure">Структурировать
+                    котиков</button>
+            </section>
+            <section class="container lead">
+                <ul class="container__list list">
+                    <li class="list__item">
+                        <img src="img/lead.webp" width="628" height="640" alt="lead img">
+                    </li>
+                    <li class="list__item">
+                        <h2 class="promo__title text">Получите самую <br> выгодную цену <br> на планете</h2>
+                        <form action="#" method="post" class="promo__subscribe form form__input">
+                            <input type="text" class="form__control form__control--dark"
+                                placeholder="Введите свой e-mail">
+                            <button class="form__btn btn btn--secondary btn--inner" type="button">Отправить</button>
+                        </form>
+                        <p class="promo__desc text text--grey">Нажимая на кнопку вы соглашаетесь на обработку <br> <a
+                                href="#" target="_blank" class="text text--accident">персональных
+                                данных</a></p>
+                    </li>
+                </ul>
+            </section>
+            <section class="container faq" id="faq">
+                <h2 class="container__title text">Часто задаваемые вопросы</h2>
+                <ul class="faq__list">
+                    <li class="faq__item faq__card" id="faq-one">
+                        <div class="faq__header">
+                            <h3 class="faq__title text">Первый вопрос</h3>
+                            <button class="faq__btn" id="faq-btn" type="button">
+                            </button>
+                        </div>
+                        <div class="faq__body">
+                            <p class="text text--grey">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
+                                pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus,
+                                lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor,
+                                porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam.
+                                Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris,
+                                sit.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq__item faq__card" id="faq-two">
+                        <div class="faq__header">
+                            <h3 class="faq__title text">Второй вопрос</h3>
+                            <button class="faq__btn faq__btn_open" type="button"></button>
+                        </div>
+                        <div class="faq__body faq__body_none">
+                            <p class="text text--grey">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
+                                pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus,
+                                lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor,
+                                porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam.
+                                Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris,
+                                sit.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq__item faq__card" id="faq-three">
+                        <div class="faq__header">
+                            <h3 class="faq__title text">Третий вопрос</h3>
+                            <button class="faq__btn faq__btn_open" type="button"></button>
+                        </div>
+                        <div class="faq__body faq__body_none">
+                            <p class="text text--grey">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
+                                pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus,
+                                lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor,
+                                porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam.
+                                Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris,
+                                sit.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="faq__item faq__card" id="faq-four">
+                        <div class="faq__header">
+                            <h3 class="faq__title text">Четвертый вопрос</h3>
+                            <button class="faq__btn faq__btn_open" type="button"></button>
+                        </div>
+                        <div class="faq__body faq__body_none">
+                            <p class="text text--grey">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa mi aliquet eu interdum eu
+                                pellentesque amet, fermentum hendrerit. Nunc hendrerit nec risus adipiscing lacus,
+                                lobortis lectus cursus nunc. Id pellentesque dapibus eu tincidunt dui id tortor,
+                                porttitor. Tincidunt nunc praesent euismod in nisl, tellus suspendisse morbi nam.
+                                Egestas eget erat malesuada gravida. Et enim integer quam orci, cursus tincidunt mauris,
+                                sit.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="container contacts" id="contacts">
+                <h2 class="container__title contacts__title text">Обратная связь</h2>
+                <ul class="container__list list">
+                    <li class="list__item">
+                        <p class="contacts__desc text text--grey">
+                            Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы можем получить для вас
+                            целевой аудитории за месяц с минимальными усилиями с вашей стороны
+                        </p>
+                        <form class="contacts__form form" action="#" method="post">
+                            <input type="email" class="form__control form__control--dark"
+                                placeholder="Введите свой e-mail">
+                            <input type="tel" class="form__control form__control--dark"
+                                placeholder="Номер мобильного телефона">
+                            <input type="text" class="form__control form__control--dark"
+                                placeholder="Никнейм в Instagram">
+                            <textarea class="form__control form__control--dark" rows="3"
+                                placeholder="Что вы бы хотели спросить о росте в Instagram"></textarea>
+                            <div class="form__btn-group">
+                                <button type="button" class="form__btn btn btn--secondary">Отправить заявку</button>
+                                <p class="form__text text text--grey">
+                                    Нажимая на кнопку вы соглашаетесь на обработку <a href="#"
+                                        class="form__link text text--accident">персональных данных</a>
+                                </p>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="list__item list__item--img">
+                        <img src="img/contacts.webp" width="538" height="596" alt="contacts-img">
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__info info">
+                <a href="#" class="info__logo logo logo--secondary">Инстаботы</a>
+                <p class="info__copyright text text--lt-grey">© 2021 Copyright reserved <br> Instabots</p>
+            </div>
+            <a href="#promo" class="footer__btn btn btn--link">Вернуться наверх <i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#promo" class="footer__btn btn btn--link-mobile">Наверх <i class="fa-solid fa-arrow-up"></i></a>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
